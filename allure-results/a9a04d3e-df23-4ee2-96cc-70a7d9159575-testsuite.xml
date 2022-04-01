@@ -1,0 +1,82 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1648633125946' stop='1648633159775'>
+    <name>login test</name>
+    <title>login test</title>
+    <test-cases>
+        <test-case start='1648633125947' status='broken' stop='1648633159775'>
+            <name>Testcase 1: Login with correct username and password</name>
+            <title>Testcase 1: Login with correct username and password</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-3'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-99.0.4844.84'/>
+            </parameters>
+            <steps>
+                <step start='1648633125949' status='passed' stop='1648633159720'>
+                    <name>POST /session/:sessionId/url</name>
+                    <title>POST /session/:sessionId/url</title>
+                    <attachments>
+                        <attachment title='Request' source='a2f43839-bbef-4ea4-a53e-2c47c1bcb4f0-attachment.json' type='application/json' size='55'/>
+                    </attachments>
+                    <steps/>
+                </step>
+                <step start='1648633159722' status='broken' stop='1648633159775'>
+                    <name>POST /session/:sessionId/element</name>
+                    <title>POST /session/:sessionId/element</title>
+                    <attachments>
+                        <attachment title='Request' source='316a9956-a616-4b06-bb34-1761094c608a-attachment.json' type='application/json' size='53'/>
+                    </attachments>
+                    <steps>
+                        <step start='1648633159725' status='broken' stop='1648633159775'>
+                            <name>POST /session/:sessionId/element</name>
+                            <title>POST /session/:sessionId/element</title>
+                            <attachments>
+                                <attachment title='Request' source='27858c05-665d-4b17-9a6c-e3eb931153ea-attachment.json' type='application/json' size='61'/>
+                            </attachments>
+                            <steps>
+                                <step start='1648633159726' status='broken' stop='1648633159775'>
+                                    <name>POST /session/:sessionId/element</name>
+                                    <title>POST /session/:sessionId/element</title>
+                                    <attachments>
+                                        <attachment title='Request' source='696a6121-741b-4a0c-89da-5223325c9a2a-attachment.json' type='application/json' size='50'/>
+                                    </attachments>
+                                    <steps>
+                                        <step start='1648633159729' status='broken' stop='1648633159775'>
+                                            <name>POST /session/:sessionId/element</name>
+                                            <title>POST /session/:sessionId/element</title>
+                                            <attachments>
+                                                <attachment title='Request' source='6e6dda5a-d62b-4d61-b2ed-7d34988e7f21-attachment.json' type='application/json' size='56'/>
+                                            </attachments>
+                                            <steps>
+                                                <step start='1648633159763' status='broken' stop='1648633159775'>
+                                                    <name>GET /session/:sessionId/screenshot</name>
+                                                    <title>GET /session/:sessionId/screenshot</title>
+                                                    <attachments/>
+                                                    <steps/>
+                                                </step>
+                                            </steps>
+                                        </step>
+                                    </steps>
+                                </step>
+                            </steps>
+                        </step>
+                    </steps>
+                </step>
+            </steps>
+            <attachments/>
+            <failure>
+                <message>no such window: target window already closed
+                from unknown error: web view not found
+                  (Session info: chrome=99.0.4844.84)</message>
+                <stack-trace>no such window: no such window: target window already closed
+                from unknown error: web view not found
+                  (Session info: chrome=99.0.4844.84)
+                    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+                    at async Context.&lt;anonymous> (/Users/thaouyen/Desktop/WebDriverIOMoChaJS/test/specs/login.spec.ts:10:5)</stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

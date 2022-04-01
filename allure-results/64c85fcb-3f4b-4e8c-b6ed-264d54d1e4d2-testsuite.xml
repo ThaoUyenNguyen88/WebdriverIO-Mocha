@@ -1,0 +1,53 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1648628966130' stop='1648629013325'>
+    <name>dropdown test</name>
+    <title>dropdown test</title>
+    <test-cases>
+        <test-case start='1648628966130' status='broken' stop='1648629013325'>
+            <name>Testcase 1: Select 'Option 1' in dropdown</name>
+            <title>Testcase 1: Select 'Option 1' in dropdown</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-1'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-99.0.4844.84'/>
+            </parameters>
+            <steps>
+                <step start='1648628966131' status='passed' stop='1648629013265'>
+                    <name>POST /session/:sessionId/url</name>
+                    <title>POST /session/:sessionId/url</title>
+                    <attachments>
+                        <attachment title='Request' source='2760a542-2031-4cad-95bb-dec0724d6b41-attachment.json' type='application/json' size='50'/>
+                    </attachments>
+                    <steps/>
+                </step>
+                <step start='1648629013266' status='broken' stop='1648629013325'>
+                    <name>POST /session/:sessionId/element</name>
+                    <title>POST /session/:sessionId/element</title>
+                    <attachments>
+                        <attachment title='Request' source='ce313b85-84a6-495c-a702-68a3f979c149-attachment.json' type='application/json' size='49'/>
+                    </attachments>
+                    <steps>
+                        <step start='1648629013306' status='broken' stop='1648629013325'>
+                            <name>GET /session/:sessionId/screenshot</name>
+                            <title>GET /session/:sessionId/screenshot</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                    </steps>
+                </step>
+            </steps>
+            <attachments/>
+            <failure>
+                <message>no such window: window was already closed
+                  (Session info: chrome=99.0.4844.84)</message>
+                <stack-trace>no such window: no such window: window was already closed
+                  (Session info: chrome=99.0.4844.84)
+                    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+                    at async Context.&lt;anonymous> (/Users/thaouyen/Desktop/WebDriverIOMoChaJS/test/specs/dropdown.spec.ts:8:12)</stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

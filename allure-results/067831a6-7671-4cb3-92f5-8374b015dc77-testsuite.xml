@@ -1,0 +1,103 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1648654033205' stop='1648654049719'>
+    <name>dropdown test</name>
+    <title>dropdown test</title>
+    <test-cases>
+        <test-case start='1648654033206' status='failed' stop='1648654049719'>
+            <name>Testcase 1: Select 'Option 1' in dropdown</name>
+            <title>Testcase 1: Select 'Option 1' in dropdown</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-1'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-99.0.4844.84'/>
+            </parameters>
+            <steps>
+                <step start='1648654033208' status='passed' stop='1648654039154'>
+                    <name>POST /session/:sessionId/url</name>
+                    <title>POST /session/:sessionId/url</title>
+                    <attachments>
+                        <attachment title='Request' source='fa9d6f87-2110-4cac-9bbb-b6af43ddb68a-attachment.json' type='application/json' size='50'/>
+                    </attachments>
+                    <steps/>
+                </step>
+                <step start='1648654039154' status='passed' stop='1648654039165'>
+                    <name>POST /session/:sessionId/element</name>
+                    <title>POST /session/:sessionId/element</title>
+                    <attachments>
+                        <attachment title='Request' source='ba1119bd-2b1e-4329-b0b2-2df1f8956b08-attachment.json' type='application/json' size='49'/>
+                        <attachment title='Response' source='bc2c4496-c60e-472b-9846-78b26a17d27f-attachment.json' type='application/json' size='83'/>
+                    </attachments>
+                    <steps/>
+                </step>
+                <step start='1648654039167' status='passed' stop='1648654039494'>
+                    <name>POST /session/:sessionId/element/f7a0921e-bb1f-44c6-9e98-389e9b84603c/click</name>
+                    <title>POST /session/:sessionId/element/f7a0921e-bb1f-44c6-9e98-389e9b84603c/click</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1648654039495' status='passed' stop='1648654039501'>
+                    <name>POST /session/:sessionId/element</name>
+                    <title>POST /session/:sessionId/element</title>
+                    <attachments>
+                        <attachment title='Request' source='26e8571c-b825-4257-a168-e7cbdfc0bd0b-attachment.json' type='application/json' size='53'/>
+                        <attachment title='Response' source='bbcff97e-5002-4c79-ae1b-77e5d71bf392-attachment.json' type='application/json' size='83'/>
+                    </attachments>
+                    <steps/>
+                </step>
+                <step start='1648654039503' status='passed' stop='1648654039509'>
+                    <name>POST /session/:sessionId/element/c1a127cd-4883-4aa0-b19d-5c11879f0f53/element</name>
+                    <title>POST /session/:sessionId/element/c1a127cd-4883-4aa0-b19d-5c11879f0f53/element</title>
+                    <attachments>
+                        <attachment title='Request' source='88d39b9e-47b0-4e9b-b0e6-e64932f3d8d2-attachment.json' type='application/json' size='206'/>
+                        <attachment title='Response' source='2c263e01-1b6d-4e7f-a645-8b0716969707-attachment.json' type='application/json' size='83'/>
+                    </attachments>
+                    <steps/>
+                </step>
+                <step start='1648654039509' status='passed' stop='1648654039519'>
+                    <name>POST /session/:sessionId/element/40c02399-eaf1-4b06-bd06-f72b71313caf/click</name>
+                    <title>POST /session/:sessionId/element/40c02399-eaf1-4b06-bd06-f72b71313caf/click</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1648654039520' status='passed' stop='1648654039528'>
+                    <name>GET /session/:sessionId/element/c1a127cd-4883-4aa0-b19d-5c11879f0f53/text</name>
+                    <title>GET /session/:sessionId/element/c1a127cd-4883-4aa0-b19d-5c11879f0f53/text</title>
+                    <attachments>
+                        <attachment title='Response' source='ae72c926-b581-4ed4-b337-786254b4e67b-attachment.json' type='application/json' size='61'/>
+                    </attachments>
+                    <steps/>
+                </step>
+                <step start='1648654049547' status='passed' stop='1648654049718'>
+                    <name>GET /session/:sessionId/screenshot</name>
+                    <title>GET /session/:sessionId/screenshot</title>
+                    <attachments>
+                        <attachment title='Screenshot' source='7ae0661f-10a4-4052-9178-94b3a0c3462d-attachment.png' type='image/png' size='75999'/>
+                    </attachments>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+            <failure>
+                <message>Expect     Please select an option
+                    Option 1
+                    Option 2
+                   to have text containing
+                
+                Expected: "Option 1"
+                Received: undefined</message>
+                <stack-trace>Error: Expect     Please select an option
+                    Option 1
+                    Option 2
+                   to have text containing
+                
+                Expected: "Option 1"
+                Received: undefined
+                    at Context.&lt;anonymous> (/Users/thaouyen/Desktop/WebDriverIOMoChaJS/test/specs/dropdown.spec.ts:16:34)
+                    at processTicksAndRejections (node:internal/process/task_queues:96:5)</stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>
